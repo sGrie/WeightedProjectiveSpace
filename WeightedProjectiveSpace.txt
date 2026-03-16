@@ -1,0 +1,30 @@
+WeightedProjectiveSpace(field, weights)
+
+this is the initializer function for the WeightedProjectiveSpace data type
+it has 4 attributes
+field, weights, dimension, and is_finite
+
+
+is_well_formed()
+
+this returns true if the WeightedProjectiveSpace is well formed,
+meaning the gcd of all the weights is 1
+
+
+make_well_formed()
+
+this does nothing if the point is already well formed, if not it divides all the weights
+by the gcd to make them well formed
+
+
+
+point(coordinates)
+
+this takes given coordinates, and constructs a point of type WeightedProjectivePoint with them
+
+
+
+def rational_points()
+
+this returns all rational points in the WeightedProjectiveSpace over a finite field,
+it will not return anything if the field is Q

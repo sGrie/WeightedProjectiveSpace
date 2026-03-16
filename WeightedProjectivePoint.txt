@@ -1,0 +1,28 @@
+WeightedProjectivePoint(coorinates, weights, field)
+
+This is the constructor function for the WeightedProjectivePoint class
+coordinates - (x_0, ..., x_n)
+weights - (w_0, ... , w_n)
+field - this should be a sage field, accepted fields are Q, or finite fields
+
+
+
+normalize()
+
+This function normalizes points allowing for easy comparison to see if two points are equivalent
+
+
+
+weighted_gcd(coordinates, weights)
+
+This function is not necessarily for user, it is more of a helper function,
+however, it finds the weighted gcd of a point given the coordinates and weights,
+this is used for normalizing points
+
+
+
+integer_representation()
+
+This function returns the integer representation of a given point
+it converts coordinates in QQ to coordinates in ZZ
+it does not change the point itself, only returns a tuple with these coordinates

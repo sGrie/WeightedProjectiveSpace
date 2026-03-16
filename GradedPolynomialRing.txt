@@ -1,0 +1,30 @@
+GradedPolynomialRing(base_ring, weights)
+
+this is the initializer function of the GradedPolynomialRing class
+it stores 5 attributes
+base_ring, weights, n, ring, vars
+
+
+degree_monomial(f)
+
+returns the degree of a weighted monomial in this graded polynomial ring
+
+
+
+is_homogenous(f)
+
+returns true if a given weighted polynomial is homogenous
+and returns false if it is not
+
+
+
+degree(f)
+
+returns the degree of a homogenous weighted polynomial,
+if the polynomial is not weighted it throws an error
+
+
+
+homogenous_part(f, deg)
+
+returns a new polynomial comprised of the monomials in f that are of the given degree
